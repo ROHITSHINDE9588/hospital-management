@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CareBridge HMS is a premium Hospital Management System landing page for appointments, doctors, departments, services, and hospital operations.">
+  <meta name="keywords" content="hospital management system, healthcare SaaS, hospital dashboard, doctors, appointments, departments">
+  <meta name="author" content="CareBridge Hospital">
+  <meta property="og:title" content="CareBridge Hospital Management System">
+  <meta property="og:description" content="Modern healthcare operations, appointments, departments, and patient care in one trusted hospital platform.">
+  <meta property="og:type" content="website">
+  <title>CareBridge Hospital Management System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="CareBridge home">
+        <span class="brand-mark"><i data-lucide="cross"></i></span>
+        <span>
+          <strong>CareBridge</strong>
+          <small>Hospital Management</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="login.html">Login</a>
+        <a class="btn btn-primary" href="dashboard.html">Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad" id="home">
+      <div class="hero-grid page-shell">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><i data-lucide="shield-check"></i> Trusted digital care operations</span>
+          <h1>CareBridge Hospital Management System</h1>
+          <p>Coordinate appointments, doctors, departments, emergency workflows, pharmacy, lab, billing, and patient experiences through a polished healthcare platform built for modern hospitals.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large" href="#contact"><i data-lucide="calendar-plus"></i> Book Appointment</a>
+            <a class="btn btn-soft btn-large" href="dashboard.html"><i data-lucide="layout-dashboard"></i> Explore Dashboard</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Modern hospital care team">
+          <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1100&q=80" alt="Modern hospital corridor with medical staff">
+          <div class="floating-icon icon-a"><i data-lucide="heart-pulse"></i></div>
+          <div class="floating-icon icon-b"><i data-lucide="stethoscope"></i></div>
+          <div class="floating-icon icon-c"><i data-lucide="pill"></i></div>
+          <div class="hero-metric metric-a">
+            <strong>24/7</strong>
+            <span>Emergency Desk</span>
+          </div>
+          <div class="hero-metric metric-b">
+            <strong>98%</strong>
+            <span>Patient Satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stat-strip page-shell reveal" aria-label="Hospital highlights">
+        <article>
+          <i data-lucide="users"></i>
+          <strong data-counter="25000" data-suffix="+">0</strong>
+          <span>Patients</span>
+        </article>
+        <article>
+          <i data-lucide="user-round-check"></i>
+          <strong data-counter="250" data-suffix="+">0</strong>
+          <span>Doctors</span>
+        </article>
+        <article>
+          <i data-lucide="building-2"></i>
+          <strong data-counter="35">0</strong>
+          <span>Departments</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats section-pad" id="about">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i data-lucide="activity"></i> Hospital impact</span>
+          <h2>Operational clarity for every care touchpoint</h2>
+          <p>CareBridge supports patient-facing service quality and back-office visibility across departments, clinical teams, and critical facilities.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card reveal"><strong data-counter="25000" data-suffix="+">0</strong><span>Patients</span></article>
+          <article class="stat-card reveal"><strong data-counter="250" data-suffix="+">0</strong><span>Doctors</span></article>
+          <article class="stat-card reveal"><strong data-counter="35">0</strong><span>Departments</span></article>
+          <article class="stat-card reveal"><strong data-counter="500">0</strong><span>Beds</span></article>
+          <article class="stat-card reveal"><strong data-counter="15">0</strong><span>Years of Experience</span></article>
+          <article class="stat-card reveal"><strong data-counter="98" data-suffix="%">0</strong><span>Patient Satisfaction</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-pad" id="services">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i data-lucide="sparkles"></i> Care services</span>
+          <h2>Essential services managed from one place</h2>
+          <p>Fast triage, precise diagnostics, transparent pharmacy operations, and coordinated specialty care for every patient journey.</p>
+        </div>
+        <div class="card-grid services-grid">
+          <article class="feature-card reveal"><i data-lucide="siren"></i><h3>Emergency Care</h3><p>Rapid response workflows for urgent admissions, trauma routing, and emergency bed allocation.</p></article>
+          <article class="feature-card reveal"><i data-lucide="monitor-heart"></i><h3>ICU</h3><p>Critical-care visibility for beds, specialists, patient vitals, and equipment readiness.</p></article>
+          <article class="feature-card reveal"><i data-lucide="pill"></i><h3>Pharmacy</h3><p>Prescription fulfillment, stock checks, supplier tracking, and safe medication handoffs.</p></article>
+          <article class="feature-card reveal"><i data-lucide="flask-conical"></i><h3>Laboratory</h3><p>Sample collection, report delivery, test status updates, and department coordination.</p></article>
+          <article class="feature-card reveal"><i data-lucide="scan-line"></i><h3>Radiology</h3><p>Imaging requests, scan appointments, report queues, and consultant reviews.</p></article>
+          <article class="feature-card reveal"><i data-lucide="scissors"></i><h3>Surgery</h3><p>Operation theatre scheduling, team assignment, consent tracking, and recovery planning.</p></article>
+          <article class="feature-card reveal"><i data-lucide="baby"></i><h3>Pediatrics</h3><p>Child-friendly appointments, vaccination schedules, growth tracking, and family updates.</p></article>
+          <article class="feature-card reveal"><i data-lucide="bone"></i><h3>Orthopedics</h3><p>Fracture care, rehab planning, implant records, and specialist follow-up workflows.</p></article>
+          <article class="feature-card reveal"><i data-lucide="ambulance"></i><h3>Ambulance</h3><p>Emergency dispatch, route coordination, availability status, and receiving-team alerts.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="departments section-pad" id="departments">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i data-lucide="building"></i> Departments</span>
+          <h2>Specialty teams ready for coordinated care</h2>
+          <p>Each department view keeps doctor capacity, service context, and patient movement easy to understand.</p>
+        </div>
+        <div class="card-grid department-grid">
+          <article class="department-card reveal"><i data-lucide="heart"></i><h3>Cardiology</h3><p>Heart health, diagnostics, and cardiac procedures.</p><span>24 Doctors</span><a href="departments.html">Learn More</a></article>
+          <article class="department-card reveal"><i data-lucide="brain"></i><h3>Neurology</h3><p>Brain, spine, and nervous system treatment.</p><span>18 Doctors</span><a href="departments.html">Learn More</a></article>
+          <article class="department-card reveal"><i data-lucide="bone"></i><h3>Orthopedics</h3><p>Joint, bone, sports injury, and rehab care.</p><span>21 Doctors</span><a href="departments.html">Learn More</a></article>
+          <article class="department-card reveal"><i data-lucide="baby"></i><h3>Pediatrics</h3><p>Comprehensive child and adolescent healthcare.</p><span>16 Doctors</span><a href="departments.html">Learn More</a></article>
+          <article class="department-card reveal"><i data-lucide="ribbon"></i><h3>Oncology</h3><p>Cancer screening, therapy, and long-term support.</p><span>14 Doctors</span><a href="departments.html">Learn More</a></article>
+          <article class="department-card reveal"><i data-lucide="scan-search"></i><h3>Radiology</h3><p>MRI, CT, ultrasound, and diagnostic imaging.</p><span>12 Doctors</span><a href="departments.html">Learn More</a></article>
+          <article class="department-card reveal"><i data-lucide="sparkle"></i><h3>Dermatology</h3><p>Skin, hair, allergy, and cosmetic treatments.</p><span>10 Doctors</span><a href="departments.html">Learn More</a></article>
+          <article class="department-card reveal"><i data-lucide="siren"></i><h3>Emergency</h3><p>Immediate triage and 24-hour acute care.</p><span>30 Doctors</span><a href="departments.html">Learn More</a></article>
+          <article class="department-card reveal"><i data-lucide="ear"></i><h3>ENT</h3><p>Ear, nose, throat, sinus, and hearing care.</p><span>9 Doctors</span><a href="departments.html">Learn More</a></article>
+          <article class="department-card reveal"><i data-lucide="clipboard-plus"></i><h3>General Medicine</h3><p>Primary care, chronic illness, and preventive health.</p><span>28 Doctors</span><a href="departments.html">Learn More</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="doctors section-pad" id="doctors">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i data-lucide="user-round-check"></i> Doctors</span>
+          <h2>Experienced specialists with clear availability</h2>
+          <p>Doctor profiles are designed for quick patient decisions and efficient appointment routing.</p>
+        </div>
+        <div class="doctor-grid">
+          <article class="doctor-card reveal">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dr. Aisha Menon">
+            <div><h3>Dr. Aisha Menon</h3><p>Cardiology</p><span>14 years experience</span><strong>&#9733;&#9733;&#9733;&#9733;&#9733; 4.9</strong><em>Available Today</em><a href="doctor-profile.html">View Profile</a></div>
+          </article>
+          <article class="doctor-card reveal">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Daniel Rao">
+            <div><h3>Dr. Daniel Rao</h3><p>Neurology</p><span>12 years experience</span><strong>&#9733;&#9733;&#9733;&#9733;&#9733; 4.8</strong><em>Tomorrow 10:00 AM</em><a href="doctor-profile.html">View Profile</a></div>
+          </article>
+          <article class="doctor-card reveal">
+            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=600&q=80" alt="Dr. Kavya Shah">
+            <div><h3>Dr. Kavya Shah</h3><p>Pediatrics</p><span>10 years experience</span><strong>&#9733;&#9733;&#9733;&#9733;&#9733; 4.9</strong><em>Available Today</em><a href="doctor-profile.html">View Profile</a></div>
+          </article>
+          <article class="doctor-card reveal">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" alt="Dr. Omar Khan">
+            <div><h3>Dr. Omar Khan</h3><p>Orthopedics</p><span>16 years experience</span><strong>&#9733;&#9733;&#9733;&#9733;&#9733; 4.7</strong><em>Friday 2:30 PM</em><a href="doctor-profile.html">View Profile</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="facilities section-pad">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i data-lucide="badge-check"></i> Facilities</span>
+          <h2>Critical facilities with operational readiness</h2>
+        </div>
+        <div class="facility-grid">
+          <article class="facility-card reveal"><i data-lucide="monitor-heart"></i><span>ICU</span></article>
+          <article class="facility-card reveal"><i data-lucide="pill"></i><span>Pharmacy</span></article>
+          <article class="facility-card reveal"><i data-lucide="droplets"></i><span>Blood Bank</span></article>
+          <article class="facility-card reveal"><i data-lucide="ambulance"></i><span>Ambulance</span></article>
+          <article class="facility-card reveal"><i data-lucide="flask-conical"></i><span>Laboratory</span></article>
+          <article class="facility-card reveal"><i data-lucide="scissors"></i><span>Operation Theatre</span></article>
+          <article class="facility-card reveal"><i data-lucide="scan"></i><span>MRI Scan</span></article>
+          <article class="facility-card reveal"><i data-lucide="scan-line"></i><span>CT Scan</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section-pad">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i data-lucide="message-circle-heart"></i> Testimonials</span>
+          <h2>Patients feel the difference in coordinated care</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Patient Priya Sharma"><strong>Priya Sharma</strong><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>The emergency team moved quickly and kept my family updated through every step.</p><em>Emergency Department</em></article>
+          <article class="testimonial-card reveal"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Patient Michael Grant"><strong>Michael Grant</strong><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>Booking, reports, and pharmacy were all connected. It felt organized and calm.</p><em>Cardiology</em></article>
+          <article class="testimonial-card reveal"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" alt="Patient Neha Patel"><strong>Neha Patel</strong><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><p>My child's pediatric appointments and vaccination reminders were handled beautifully.</p><em>Pediatrics</em></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad">
+      <div class="page-shell faq-shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i data-lucide="circle-help"></i> FAQ</span>
+          <h2>Common hospital questions</h2>
+        </div>
+        <div class="accordion reveal">
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">How do I book an appointment?<i data-lucide="chevron-down"></i></button>
+            <p>Use the appointment form in the contact section or open the dashboard appointment module when connected to your hospital system.</p>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">Is emergency care available 24/7?<i data-lucide="chevron-down"></i></button>
+            <p>Yes. Emergency workflows, ambulance routing, and triage support are designed for round-the-clock hospital operations.</p>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">Can patients view reports online?<i data-lucide="chevron-down"></i></button>
+            <p>Report access can be connected through the patient dashboard for lab, radiology, prescription, and visit summaries.</p>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">Does the system support multiple departments?<i data-lucide="chevron-down"></i></button>
+            <p>Yes. Departments, doctors, beds, services, and appointments can be organized across a multi-specialty hospital setup.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="page-shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i data-lucide="phone-call"></i> Contact</span>
+          <h2>Book a visit or reach the hospital desk</h2>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form reveal" aria-label="Appointment request form">
+            <label>Full Name<input type="text" name="name" placeholder="Enter your name" required></label>
+            <label>Email<input type="email" name="email" placeholder="name@example.com" required></label>
+            <label>Phone<input type="tel" name="phone" placeholder="+1 555 010 2048" required></label>
+            <label>Department<select name="department" required><option value="">Select department</option><option>Cardiology</option><option>Neurology</option><option>Pediatrics</option><option>Emergency</option></select></label>
+            <label>Message<textarea name="message" rows="4" placeholder="Tell us what you need"></textarea></label>
+            <button class="btn btn-primary btn-large" type="submit"><i data-lucide="send"></i> Send Request</button>
+          </form>
+
+          <div class="contact-details reveal">
+            <article class="contact-card"><i data-lucide="map-pin"></i><div><strong>Hospital Address</strong><span>42 Wellness Avenue, Medical District, New York, NY 10001</span></div></article>
+            <article class="contact-card"><i data-lucide="phone"></i><div><strong>Phone Number</strong><span>+1 555 010 2048</span></div></article>
+            <article class="contact-card"><i data-lucide="mail"></i><div><strong>Email</strong><span>care@carebridge.example</span></div></article>
+            <article class="contact-card"><i data-lucide="clock"></i><div><strong>Working Hours</strong><span>Mon-Sat 8:00 AM - 8:00 PM, Emergency 24/7</span></div></article>
+            <article class="emergency-card"><strong>Emergency Contact</strong><span>Call +1 555 911 2026 for immediate medical support.</span></article>
+            <div class="map-placeholder" aria-label="Google Maps placeholder">
+              <i data-lucide="map"></i>
+              <span>Google Maps Location</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home">
+          <span class="brand-mark"><i data-lucide="cross"></i></span>
+          <span><strong>CareBridge</strong><small>Hospital Management</small></span>
+        </a>
+        <p>A modern hospital management landing page for trusted care delivery, clear operations, and patient-first service.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        </div>
+      </div>
+      <div><h3>About</h3><a href="#about">Hospital</a><a href="#doctors">Doctors</a><a href="#contact">Contact</a></div>
+      <div><h3>Departments</h3><a href="#departments">Cardiology</a><a href="#departments">Pediatrics</a><a href="#departments">Emergency</a></div>
+      <div><h3>Services</h3><a href="#services">Laboratory</a><a href="#services">Pharmacy</a><a href="#services">Ambulance</a></div>
+      <div><h3>Quick Links</h3><a href="dashboard.html">Dashboard</a><a href="login.html">Login</a><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></div>
+      <form class="newsletter" aria-label="Newsletter subscription">
+        <h3>Newsletter</h3>
+        <label>Email<input type="email" placeholder="you@example.com" required></label>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-bottom page-shell">
+      <span>&copy; 2026 CareBridge Hospital. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>

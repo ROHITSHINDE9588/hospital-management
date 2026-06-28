@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CareBridge Hospital Management dashboard for appointments, doctors, beds, departments, billing, and patient operations.">
+  <title>CareBridge HMS Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html" aria-label="CareBridge home">
+      <span class="brand-mark"><i data-lucide="cross"></i></span>
+      <span>
+        <strong>CareBridge</strong>
+        <small>Hospital Management</small>
+      </span>
+    </a>
+
+    <nav class="side-nav" aria-label="Dashboard navigation">
+      <a class="is-active" href="#"><i data-lucide="layout-dashboard"></i> Overview</a>
+      <a href="#"><i data-lucide="calendar-days"></i> Appointments</a>
+      <a href="#"><i data-lucide="users"></i> Patients</a>
+      <a href="#"><i data-lucide="user-round-check"></i> Doctors</a>
+      <a href="#"><i data-lucide="bed"></i> Beds</a>
+      <a href="#"><i data-lucide="receipt-text"></i> Billing</a>
+      <a href="#"><i data-lucide="pill"></i> Pharmacy</a>
+      <a href="#"><i data-lucide="settings"></i> Settings</a>
+    </nav>
+
+    <article class="support-card">
+      <i data-lucide="phone-call"></i>
+      <strong>Emergency Desk</strong>
+      <span>Live hospital support is available 24/7.</span>
+      <a href="tel:+15559112026">Call Now</a>
+    </article>
+  </aside>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <div>
+        <p class="eyebrow">Hospital command center</p>
+        <h1>Dashboard Overview</h1>
+      </div>
+
+      <form class="search" role="search">
+        <i data-lucide="search"></i>
+        <input type="search" placeholder="Search patients, doctors, reports">
+      </form>
+
+      <div class="top-actions">
+        <button class="icon-button" type="button" aria-label="Notifications"><i data-lucide="bell"></i></button>
+        <a class="profile" href="#">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=160&q=80" alt="Administrator profile">
+          <span>Admin</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-panel">
+        <div>
+          <span class="status-pill"><i data-lucide="activity"></i> Today, 28 June 2026</span>
+          <h2>Good evening, hospital team.</h2>
+          <p>Appointments, emergency load, bed occupancy, and revenue are steady. ICU occupancy needs attention in the next shift.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#"><i data-lucide="calendar-plus"></i> New Appointment</a>
+          <a class="btn btn-soft" href="index.html"><i data-lucide="house"></i> Landing Page</a>
+        </div>
+      </section>
+
+      <section class="kpi-grid" aria-label="Hospital metrics">
+        <article class="kpi-card">
+          <i data-lucide="users"></i>
+          <span>Total Patients</span>
+          <strong>25,482</strong>
+          <em>+12.5% this month</em>
+        </article>
+        <article class="kpi-card">
+          <i data-lucide="calendar-check"></i>
+          <span>Appointments</span>
+          <strong>184</strong>
+          <em>42 pending today</em>
+        </article>
+        <article class="kpi-card">
+          <i data-lucide="bed"></i>
+          <span>Available Beds</span>
+          <strong>118</strong>
+          <em>382 occupied</em>
+        </article>
+        <article class="kpi-card">
+          <i data-lucide="wallet-cards"></i>
+          <span>Revenue</span>
+          <strong>$84.2k</strong>
+          <em>+8.1% this week</em>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel appointments-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Queue</p>
+              <h2>Today&apos;s Appointments</h2>
+            </div>
+            <a href="#">View All</a>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Patient</th>
+                  <th>Doctor</th>
+                  <th>Time</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Maria Lee</strong><span>Cardiology</span></td>
+                  <td>Dr. Aisha Menon</td>
+                  <td>09:30 AM</td>
+                  <td><mark class="tag confirmed">Confirmed</mark></td>
+                </tr>
+                <tr>
+                  <td><strong>James Carter</strong><span>Neurology</span></td>
+                  <td>Dr. Daniel Rao</td>
+                  <td>10:15 AM</td>
+                  <td><mark class="tag waiting">Waiting</mark></td>
+                </tr>
+                <tr>
+                  <td><strong>Neha Patel</strong><span>Pediatrics</span></td>
+                  <td>Dr. Kavya Shah</td>
+                  <td>11:00 AM</td>
+                  <td><mark class="tag confirmed">Confirmed</mark></td>
+                </tr>
+                <tr>
+                  <td><strong>Omar Blake</strong><span>Orthopedics</span></td>
+                  <td>Dr. Omar Khan</td>
+                  <td>12:20 PM</td>
+                  <td><mark class="tag urgent">Urgent</mark></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel bed-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Capacity</p>
+              <h2>Bed Status</h2>
+            </div>
+          </div>
+
+          <div class="bed-meter">
+            <span style="--value: 78%"></span>
+          </div>
+          <div class="bed-summary">
+            <strong>78%</strong>
+            <span>Overall occupancy</span>
+          </div>
+
+          <div class="bed-list">
+            <div><span>ICU</span><strong>42 / 50</strong></div>
+            <div><span>General</span><strong>214 / 300</strong></div>
+            <div><span>Emergency</span><strong>34 / 45</strong></div>
+            <div><span>Pediatric</span><strong>27 / 38</strong></div>
+          </div>
+        </article>
+
+        <article class="panel doctors-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Team</p>
+              <h2>Doctors on Duty</h2>
+            </div>
+            <a href="#">Schedule</a>
+          </div>
+
+          <div class="doctor-list">
+            <div>
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=160&q=80" alt="Dr. Daniel Rao">
+              <span><strong>Dr. Daniel Rao</strong><em>Neurology</em></span>
+              <mark class="tag confirmed">On Duty</mark>
+            </div>
+            <div>
+              <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=160&q=80" alt="Dr. Kavya Shah">
+              <span><strong>Dr. Kavya Shah</strong><em>Pediatrics</em></span>
+              <mark class="tag confirmed">On Duty</mark>
+            </div>
+            <div>
+              <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=160&q=80" alt="Dr. Omar Khan">
+              <span><strong>Dr. Omar Khan</strong><em>Orthopedics</em></span>
+              <mark class="tag waiting">Round</mark>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel department-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Departments</p>
+              <h2>Patient Load</h2>
+            </div>
+          </div>
+
+          <div class="bars">
+            <div><span>Emergency</span><strong>86%</strong><em style="--bar: 86%"></em></div>
+            <div><span>Cardiology</span><strong>72%</strong><em style="--bar: 72%"></em></div>
+            <div><span>Pediatrics</span><strong>58%</strong><em style="--bar: 58%"></em></div>
+            <div><span>Radiology</span><strong>46%</strong><em style="--bar: 46%"></em></div>
+          </div>
+        </article>
+
+        <article class="panel activity-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Live updates</p>
+              <h2>Recent Activity</h2>
+            </div>
+          </div>
+
+          <ol class="activity-list">
+            <li><i data-lucide="ambulance"></i><span>Ambulance dispatched to North Avenue.</span><time>5 min ago</time></li>
+            <li><i data-lucide="flask-conical"></i><span>Lab report uploaded for Maria Lee.</span><time>18 min ago</time></li>
+            <li><i data-lucide="bed"></i><span>ICU bed assigned to emergency admission.</span><time>32 min ago</time></li>
+            <li><i data-lucide="receipt-text"></i><span>Billing invoice generated for OPD visit.</span><time>48 min ago</time></li>
+          </ol>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div class="overlay" hidden></div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

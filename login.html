@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Secure CareBridge Hospital Management System login for staff, doctors, and patients.">
+  <title>Login | CareBridge HMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-hero" aria-label="Hospital login information">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i data-lucide="cross"></i></span>
+        <span>
+          <strong>CareBridge</strong>
+          <small>Hospital Management</small>
+        </span>
+      </a>
+
+      <div class="hero-copy">
+        <span class="eyebrow"><i data-lucide="shield-check"></i> Secure access</span>
+        <h1>Welcome back to coordinated care.</h1>
+        <p>Access appointments, patient records, department activity, billing, pharmacy, and hospital operations from one protected workspace.</p>
+      </div>
+
+      <div class="trust-grid">
+        <article>
+          <i data-lucide="lock-keyhole"></i>
+          <strong>Encrypted Login</strong>
+          <span>Protected sessions for hospital teams.</span>
+        </article>
+        <article>
+          <i data-lucide="activity"></i>
+          <strong>Live Dashboard</strong>
+          <span>Real-time hospital operations view.</span>
+        </article>
+        <article>
+          <i data-lucide="user-round-check"></i>
+          <strong>Role Access</strong>
+          <span>Staff, doctors, admins, and patients.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="auth-panel" aria-label="Login form">
+      <div class="auth-header">
+        <a class="back-link" href="index.html"><i data-lucide="arrow-left"></i> Home</a>
+        <a class="dashboard-link" href="dashboard.html">Open Dashboard</a>
+      </div>
+
+      <div class="form-card">
+        <div class="form-title">
+          <span class="icon-badge"><i data-lucide="stethoscope"></i></span>
+          <h2>Sign in</h2>
+          <p>Use your hospital credentials to continue.</p>
+        </div>
+
+        <div class="role-tabs" role="tablist" aria-label="Choose account type">
+          <button class="is-active" type="button" data-role="staff" role="tab" aria-selected="true">Staff</button>
+          <button type="button" data-role="doctor" role="tab" aria-selected="false">Doctor</button>
+          <button type="button" data-role="patient" role="tab" aria-selected="false">Patient</button>
+        </div>
+
+        <form class="login-form">
+          <label>
+            Email or ID
+            <span class="field">
+              <i data-lucide="mail"></i>
+              <input type="text" name="login" placeholder="staff@carebridge.example" required>
+            </span>
+          </label>
+
+          <label>
+            Password
+            <span class="field">
+              <i data-lucide="lock"></i>
+              <input id="password" type="password" name="password" placeholder="Enter your password" required>
+              <button class="password-toggle" type="button" aria-label="Show password">
+                <i data-lucide="eye"></i>
+              </button>
+            </span>
+          </label>
+
+          <div class="form-row">
+            <label class="check-label">
+              <input type="checkbox" name="remember">
+              <span>Remember me</span>
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button class="btn btn-primary" type="submit"><i data-lucide="log-in"></i> Login</button>
+        </form>
+
+        <div class="divider"><span>or continue with</span></div>
+
+        <div class="quick-actions">
+          <button type="button"><i data-lucide="scan-face"></i> Biometric</button>
+          <button type="button"><i data-lucide="badge-check"></i> Staff SSO</button>
+        </div>
+
+        <p class="signup-note">New patient? <a href="#">Create an account</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="login.js"></script>
+</body>
+</html>
